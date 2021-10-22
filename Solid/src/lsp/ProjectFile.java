@@ -1,4 +1,4 @@
-package LSP;
+package lsp;
 
 public class ProjectFile {
 	public String filePath;

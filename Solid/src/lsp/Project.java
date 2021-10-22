@@ -1,4 +1,4 @@
-package LSP;
+package lsp;
 
 import java.util.Vector;
 
