@@ -7,9 +7,13 @@ public class Main {
 		String mezua = "Hello World!!!";
 		EmailSender es = new EmailSender();
 		es.sendEmail(p, mezua);
-		System.out.println("Person klasera mezua bidali da.");
+		System.out.println(p.getName() + " pertsonari email mezua bidali zaio: " + mezua);
+		
+		SMSSender.sendSMS(p, mezua);
+		System.out.println(p.getName() + " pertsonari SMS mezua bidali zaio: " + mezua);
+
 		GmailAccount ga = new GmailAccount("Unax","unacen@gmail.com");
 		es.sendEmail(ga, mezua);
-		System.out.println("GmailAccount klasera mezua bidali da.");
+		System.out.println(ga.getEmail() + " emailari mezua bidali zaio: " + mezua);
 	}
 }
